@@ -1,0 +1,239 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-wrap {
+  display: flex;
+  background: #0d1728;
+  width: auto;
+  height: 100px;
+}
+
+.logo {
+  color: white;
+  background: #0d1728;
+  font-weight: bolder;
+  font-size: 46px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 25px;
+}
+
+.nav-bar a {
+  padding: 1.5rem;
+  display: flex;
+  text-decoration: none;
+}
+
+.ham-menu {
+  height: 50px;
+  width: 50px;
+}
+
+.ham-menu span {
+  height: 5px;
+  width: 12%;
+  background-color: rgb(247, 242, 242);
+  border-radius: 25px;
+  position: absolute;
+  top: 2%;
+  left: 88%;
+  transform: translate(-50%, -50%);
+  transition: 0.3 ease;
+}
+
+.ham-menu span:nth-child(1) {
+  top: 4%;
+}
+
+.ham-menu span:nth-child(2) {
+  top: 6%;
+}
+
+.ham-menu span:nth-child(3) {
+  top: 8%;
+}
+
+.ham-menu.active span:nth-child(1) {
+  top: 6%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+  top: 5.5%;
+  transform: translate(-50%, 50%) rotate(-45deg);
+}
+
+.off-screen-menu {
+  background-color: rgba(13, 24, 40, 0.747);
+  height: 100vh;
+  width: 100vw;
+  max-width: 450px;
+  position: fixed;
+  top: 0;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  transition: 0.3s ease;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.off-screen-menu :active {
+  right: 0;
+}
+
+.wrapper {
+  background: #090e18;
+  height: 4000px;
+}
+
+h1 {
+  padding: 7rem 4px 7px 2rem;
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 45px;
+}
+
+.myName {
+  color: #4e93fa;
+}
+
+.intro {
+  color: white;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  width: 95%;
+  padding: 1rem 3rem 3rem 2rem;
+}
+
+b {
+  color: #4e93fa;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.connect {
+  padding: 1rem 5rem 5rem 2rem;
+  color: #4e93fa;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.socials {
+  padding: 1px 3rem 4rem 2rem;
+  margin-top: -0;
+}
+
+.socials li {
+  display: inline;
+  padding: 4%;
+}
+
+.work-cards {
+  display: flex;
+  margin-left: 2rem;
+  margin-bottom: 8rem;
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.card-1 {
+  width: 340px;
+  height: 576px;
+  background: #0d1728;
+  align-self: center;
+  margin-left: 19px;
+  border-radius: 20px;
+}
+
+.card-2 {
+  width: 340px;
+  height: 576px;
+  background: #0d1728;
+  align-self: center;
+  margin-left: 19px;
+  margin-top: 4rem;
+  border-radius: 20px;
+}
+
+.card-3 {
+  width: 340px;
+  height: 576px;
+  background: #0d1728;
+  align-self: center;
+  margin-left: 19px;
+  margin-top: 4rem;
+  border-radius: 20px;
+}
+
+.img-1 {
+  width: 300px;
+  height: 280px;
+  margin-left: 20px;
+  margin-top: 1rem;
+  border-radius: 20px;
+}
+
+.project-1 {
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2rem;
+  color: #4e93fa;
+}
+
+.card-title {
+  display: flex;
+  padding: 2px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  justify-content: space-around;
+  align-items: baseline;
+}
+
+.calendar {
+  margin-right: -60px;
+  margin-top: 5px;
+}
+
+.year {
+  margin-right: 17px;
+}
+
+.card-text {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 66%;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.html {
+  color: #4e93fa;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+.card-btn {
+  width: 80%;
+  height: 40px;
+  background: #0d1728;
+  border: #4e93fa 2px solid;
+  border-radius: 10px;
+  color: #4e93fa;
+  margin-left: 2.2rem;
+  margin-top: 2rem;
+}
