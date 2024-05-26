@@ -110,6 +110,7 @@ a {
 
 .wrapper {
   background: #090e18;
+  width: fit-content;
 }
 
 h1 {
@@ -143,7 +144,7 @@ b {
   border-radius: 10px;
   color: #4e93fa;
   margin-left: 2.2rem;
-  margin-top: 2rem;
+  margin-bottom: -7rem;
 }
 
 .socials {
@@ -364,10 +365,81 @@ footer {
 
   .intro {
     font-size: 30px;
+    width: 60%;
+  }
+
+  .btn-intro {
+    width: 20%;
+    font-size: 20px;
+    margin-top: -8rem;
+    transition: all 0.5s ease-out;
+  }
+
+  .btn-intro:hover {
+    color: white;
+    background: #4e93fa;
+  }
+
+  .img-profile {
+    margin-top: -30rem;
+    margin-left: 60rem;
+  }
+
+  .img-responsive {
+    width: auto;
+    height: auto;
+    box-shadow: 10px 10px 2px rgba(12, 143, 231, 0.7);
+    transition: box-shadow 0.3s ease-out;
+  }
+
+  .img-responsive:hover {
+    box-shadow: 15px 15px 15px 15px rgba(12, 143, 231, 0.7);
+  }
+
+  hr {
+    border: 1px solid #4e93fa;
+    width: 70%;
+    margin-left: 14rem;
   }
 
   .socials {
     display: grid;
     grid-template-columns: repeat(4, auto);
+  }
+
+  .desktop-cards {
+    display: flex;
+  }
+
+  .card-desktop-1 {
+    display: grid;
+    width: auto;
+    margin-right: 1rem;
+  }
+
+  .project-1-desktop {
+    margin-left: 50rem;
+    margin-top: -16rem;
+  }
+
+  .card-title {
+    display: none;
+  }
+
+  .card-title-desktop {
+    display: flex;
+    width: 70%;
+    padding: 0;
+    justify-content: space-evenly;
+    margin-left: 4.8rem;
+    margin-top: -14rem;
+  }
+
+  .card-title-desktop h2 {
+    margin-bottom: 2rem;
+  }
+
+  .details-desktop {
+    margin-left: 41rem;
   }
 }
