@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-html {
+.html {
   scroll-behavior: smooth;
 }
 
@@ -28,8 +28,8 @@ a {
   display: flex;
   color: #4e93fa;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 5.6rem;
   padding: 1rem;
+  justify-content: center;
 }
 
 .nav-bar a {
@@ -111,6 +111,7 @@ a {
 .wrapper {
   background: #090e18;
   width: fit-content;
+  height: 4550px;
 }
 
 h1 {
@@ -232,9 +233,10 @@ b {
 }
 
 .card-text {
+  display: flex;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-  width: 66%;
+  width: 60%;
   margin-left: 2rem;
   margin-top: 1rem;
 }
@@ -325,6 +327,7 @@ footer {
 
   .menu-wrap {
     position: fixed;
+    width: -webkit-fill-available;
   }
 
   .desktop-menu-wrap {
@@ -402,24 +405,48 @@ footer {
     margin-left: 14rem;
   }
 
-  .socials {
+  .socials-desktop {
     display: grid;
     grid-template-columns: repeat(4, auto);
+    padding: 2rem;
   }
 
   .desktop-cards {
     display: flex;
+    justify-content: center;
   }
 
-  .card-desktop-1 {
+  .skills-list-desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-title-desktop {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-text-desktop {
+    display: flex;
+    width: 40%;
+    font-size: 30px;
+    margin-left: 30rem;
+  }
+
+  .contact-email-desktop a {
+    display: flex;
+    margin-left: 40rem;
+  }
+
+  .card-desktop {
     display: grid;
     width: auto;
     margin-right: 1rem;
   }
 
-  .project-1-desktop {
+  .project-desktop {
     margin-left: 50rem;
-    margin-top: -16rem;
+    margin-top: -31rem;
   }
 
   .card-title {
@@ -432,7 +459,7 @@ footer {
     padding: 0;
     justify-content: space-evenly;
     margin-left: 4.8rem;
-    margin-top: -14rem;
+    margin-top: -27rem;
   }
 
   .card-title-desktop h2 {
@@ -442,4 +469,42 @@ footer {
   .details-desktop {
     margin-left: 41rem;
   }
+
+  .text-desktop {
+    display: flex;
+    margin-left: 50rem;
+    margin-top: -22rem;
+    font-size: 24px;
+    width: 40%;
+  }
+
+  .tech-desktop {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 33rem;
+    margin-top: -15rem;
+  }
+
+  .card-btn-desktop {
+    width: 45%;
+    margin-left: 52%;
+    margin-top: -10rem;
+    font-size: 20px;
+  }
+
+  .img-desktop {
+    width: 50%;
+    height: 34rem;
+  }
+
+  .media {
+    padding: 2rem;
+  }
+
+  footer {
+    display: flex;
+    margin-left: 45rem;
+    margin-top: 2rem;
+  }
+
 }
