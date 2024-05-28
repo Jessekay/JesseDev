@@ -10,18 +10,9 @@
 
 .menu-wrap {
   display: flex;
-  background: #0d1728;
+  background: #090e18;
   width: 100%;
   height: 7rem;
-}
-
-.logo {
-  color: white;
-  background: #0d1728;
-  font-weight: bolder;
-  font-size: 46px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  padding: 25px;
 }
 
 a {
@@ -319,6 +310,11 @@ footer {
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+  }
+
+  .logo {
+  height: 76px;
+  margin-top: 1rem;
   }
 
   .ham-menu span {
