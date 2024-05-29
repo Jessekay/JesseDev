@@ -30,7 +30,9 @@ a {
   color: #4e93fa;
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 5.6rem;
+  margin-top: -6px;
   padding: 1rem;
+  text-decoration: none;
 }
 
 .nav-bar a {
